@@ -10,12 +10,16 @@ function SnapCrackle (maxValue){
     if((i % 1 === 0) && (i % 5 === 0)){
       if(primo){
         retornoString += 'SnapCracklePrime, '
+      }else if((i % 2 === 0) && (i % 5 === 0)){
+        retornoString += 'Crackle, ' 
       }else{
-        retornoString += 'SnapCrackle, ' 
+        retornoString += 'SnapCrackle, '
       }
     }else if(i % 5 === 0){
       if(primo){
         retornoString += 'CracklePrime, '
+      //}else if(i % 2 === 0){
+      //  retornoString += 'Crackle, '
       }else{
         retornoString += 'Crackle, '
       }
